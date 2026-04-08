@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "answer_bkg_qa": {
+      "type": "array",
+      "description": "A list of answers, one for each question.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "original_hash": { "type": "string" },
+          "question": { "type": "string" },
+          "output_answer": { "type": "string" }
+        },
+        "required": ["original_hash", "question", "output_answer"]
+      }
+    }
+  },
+  "required": ["answer_bkg_qa"]
+}

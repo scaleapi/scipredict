@@ -1,0 +1,17 @@
+# Valid keys: main_qa, main_qa_background, judge
+key: null
+
+seed: 42
+limit: 5  # limit the number of samples for debugging, set to null to use all samples
+
+prompts:
+    base_dir: "res/prompts/main_qa"
+    main_qa: "${run.prompts.base_dir}/main_qa.ini"
+    main_qa_background: "${run.prompts.base_dir}/main_qa_background.ini"
+    judge: "${run.prompts.base_dir}/judge.ini"
+
+schemas:
+    base_dir: "res/schemas/main_qa"
+    main_qa: "${run.schemas.base_dir}/main_qa.json"
+    main_qa_background: "${run.schemas.base_dir}/main_qa.json"
+    judge: "${run.schemas.base_dir}/judge.json"

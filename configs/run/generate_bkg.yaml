@@ -1,0 +1,16 @@
+# Supported: generate_bkg, bkg_to_qa, answer_bkg_qa, judge_bkg_qa
+key: null
+
+prompts:
+    generate_bkg: "res/prompts/pipelines/generate_bkg.ini"
+    bkg_to_qa: "res/prompts/pipelines/bkg_to_qa.ini"
+    answer_bkg_qa: "res/prompts/pipelines/answer_bkg_qa.ini"
+    judge_bkg_qa: "res/prompts/pipelines/judge_bkg_qa.ini"
+
+schemas:
+    generate_bkg: "res/schemas/pipelines/generate_bkg.json"
+    bkg_to_qa: "res/schemas/pipelines/bkg_to_qa.json"
+    answer_bkg_qa: "res/schemas/pipelines/answer_bkg_qa.json"
+    judge_bkg_qa: "res/schemas/pipelines/judge_bkg_qa.json"
+
+limit: null # Set to a number like 5 for testing

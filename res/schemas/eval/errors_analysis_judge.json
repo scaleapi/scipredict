@@ -1,0 +1,444 @@
+{
+  "type": "object",
+  "properties": {
+    "primary_error_category": {
+      "type": "object",
+      "properties": {
+        "choice": {
+          "type": "string",
+          "enum": [
+            "Comprehension & Scope Errors",
+            "Factual & Extraction Errors",
+            "Logical & Reasoning Flaws",
+            "Deficiencies in Scientific Rigor",
+            "Formatting & Mechanical Bug"
+          ]
+        },
+        "reasoning": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "choice",
+        "reasoning"
+      ]
+    },
+    "flag_task_misinterpretation": {
+      "type": "object",
+      "properties": {
+        "judgment": {
+          "type": "string",
+          "enum": [
+            "YES",
+            "NO"
+          ]
+        },
+        "reasoning": {
+          "type": "string"
+        }
+      },
+      "propertyOrdering": [
+        "judgment",
+        "reasoning"
+      ],
+      "required": [
+        "judgment",
+        "reasoning"
+      ]
+    },
+    "flag_constraint_violation": {
+      "type": "object",
+      "properties": {
+        "judgment": {
+          "type": "string",
+          "enum": [
+            "YES",
+            "NO",
+            "N/A"
+          ]
+        },
+        "reasoning": {
+          "type": "string"
+        }
+      },
+      "propertyOrdering": [
+        "judgment",
+        "reasoning"
+      ],
+      "required": [
+        "judgment",
+        "reasoning"
+      ]
+    },
+    "flag_insufficient_specificity": {
+      "type": "object",
+      "properties": {
+        "judgment": {
+          "type": "string",
+          "enum": [
+            "YES",
+            "NO"
+          ]
+        },
+        "reasoning": {
+          "type": "string"
+        }
+      },
+      "propertyOrdering": [
+        "judgment",
+        "reasoning"
+      ],
+      "required": [
+        "judgment",
+        "reasoning"
+      ]
+    },
+    "flag_irrelevant_information": {
+      "type": "object",
+      "properties": {
+        "judgment": {
+          "type": "string",
+          "enum": [
+            "YES",
+            "NO"
+          ]
+        },
+        "reasoning": {
+          "type": "string"
+        }
+      },
+      "propertyOrdering": [
+        "judgment",
+        "reasoning"
+      ],
+      "required": [
+        "judgment",
+        "reasoning"
+      ]
+    },
+    "flag_information_omission": {
+      "type": "object",
+      "properties": {
+        "judgment": {
+          "type": "string",
+          "enum": [
+            "YES",
+            "NO",
+            "N/A"
+          ]
+        },
+        "reasoning": {
+          "type": "string"
+        }
+      },
+      "propertyOrdering": [
+        "judgment",
+        "reasoning"
+      ],
+      "required": [
+        "judgment",
+        "reasoning"
+      ]
+    },
+    "flag_factual_contradiction": {
+      "type": "object",
+      "properties": {
+        "judgment": {
+          "type": "string",
+          "enum": [
+            "YES",
+            "NO"
+          ]
+        },
+        "reasoning": {
+          "type": "string"
+        }
+      },
+      "propertyOrdering": [
+        "judgment",
+        "reasoning"
+      ],
+      "required": [
+        "judgment",
+        "reasoning"
+      ]
+    },
+    "flag_information_fabrication": {
+      "type": "object",
+      "properties": {
+        "judgment": {
+          "type": "string",
+          "enum": [
+            "YES",
+            "NO"
+          ]
+        },
+        "reasoning": {
+          "type": "string"
+        }
+      },
+      "propertyOrdering": [
+        "judgment",
+        "reasoning"
+      ],
+      "required": [
+        "judgment",
+        "reasoning"
+      ]
+    },
+    "flag_detail_omission_in_reasoning": {
+      "type": "object",
+      "properties": {
+        "judgment": {
+          "type": "string",
+          "enum": [
+            "YES",
+            "NO",
+            "N/A"
+          ]
+        },
+        "reasoning": {
+          "type": "string"
+        }
+      },
+      "propertyOrdering": [
+        "judgment",
+        "reasoning"
+      ],
+      "required": [
+        "judgment",
+        "reasoning"
+      ]
+    },
+    "flag_tautological_reasoning": {
+      "type": "object",
+      "properties": {
+        "judgment": {
+          "type": "string",
+          "enum": [
+            "YES",
+            "NO",
+            "N/A"
+          ]
+        },
+        "reasoning": {
+          "type": "string"
+        }
+      },
+      "propertyOrdering": [
+        "judgment",
+        "reasoning"
+      ],
+      "required": [
+        "judgment",
+        "reasoning"
+      ]
+    },
+    "flag_unsupported_assumption": {
+      "type": "object",
+      "properties": {
+        "judgment": {
+          "type": "string",
+          "enum": [
+            "YES",
+            "NO",
+            "N/A"
+          ]
+        },
+        "reasoning": {
+          "type": "string"
+        }
+      },
+      "propertyOrdering": [
+        "judgment",
+        "reasoning"
+      ],
+      "required": [
+        "judgment",
+        "reasoning"
+      ]
+    },
+    "flag_disconnected_reasoning": {
+      "type": "object",
+      "properties": {
+        "judgment": {
+          "type": "string",
+          "enum": [
+            "YES",
+            "NO",
+            "N/A"
+          ]
+        },
+        "reasoning": {
+          "type": "string"
+        }
+      },
+      "propertyOrdering": [
+        "judgment",
+        "reasoning"
+      ],
+      "required": [
+        "judgment",
+        "reasoning"
+      ]
+    },
+    "flag_oversimplified_causality": {
+      "type": "object",
+      "properties": {
+        "judgment": {
+          "type": "string",
+          "enum": [
+            "YES",
+            "NO",
+            "N/A"
+          ]
+        },
+        "reasoning": {
+          "type": "string"
+        }
+      },
+      "propertyOrdering": [
+        "judgment",
+        "reasoning"
+      ],
+      "required": [
+        "judgment",
+        "reasoning"
+      ]
+    },
+    "flag_false_certainty": {
+      "type": "object",
+      "properties": {
+        "judgment": {
+          "type": "string",
+          "enum": [
+            "YES",
+            "NO",
+            "N/A"
+          ]
+        },
+        "reasoning": {
+          "type": "string"
+        }
+      },
+      "propertyOrdering": [
+        "judgment",
+        "reasoning"
+      ],
+      "required": [
+        "judgment",
+        "reasoning"
+      ]
+    },
+    "flag_violation_of_foundational_principles": {
+      "type": "object",
+      "properties": {
+        "judgment": {
+          "type": "string",
+          "enum": [
+            "YES",
+            "NO",
+            "N/A"
+          ]
+        },
+        "reasoning": {
+          "type": "string"
+        }
+      },
+      "propertyOrdering": [
+        "judgment",
+        "reasoning"
+      ],
+      "required": [
+        "judgment",
+        "reasoning"
+      ]
+    },
+    "flag_failure_to_acknowledge_limitations": {
+      "type": "object",
+      "properties": {
+        "judgment": {
+          "type": "string",
+          "enum": [
+            "YES",
+            "NO",
+            "N/A"
+          ]
+        },
+        "reasoning": {
+          "type": "string"
+        }
+      },
+      "propertyOrdering": [
+        "judgment",
+        "reasoning"
+      ],
+      "required": [
+        "judgment",
+        "reasoning"
+      ]
+    },
+    "flag_incorrect_answer_reference": {
+      "type": "object",
+      "properties": {
+        "judgment": {
+          "type": "string",
+          "enum": [
+            "YES",
+            "NO",
+            "N/A"
+          ]
+        },
+        "reasoning": {
+          "type": "string"
+        }
+      },
+      "propertyOrdering": [
+        "judgment",
+        "reasoning"
+      ],
+      "required": [
+        "judgment",
+        "reasoning"
+      ]
+    }
+  },
+  "propertyOrdering": [
+    "primary_error_category",
+    "flag_task_misinterpretation",
+    "flag_constraint_violation",
+    "flag_insufficient_specificity",
+    "flag_irrelevant_information",
+    "flag_information_omission",
+    "flag_factual_contradiction",
+    "flag_information_fabrication",
+    "flag_detail_omission_in_reasoning",
+    "flag_tautological_reasoning",
+    "flag_unsupported_assumption",
+    "flag_disconnected_reasoning",
+    "flag_oversimplified_causality",
+    "flag_false_certainty",
+    "flag_violation_of_foundational_principles",
+    "flag_failure_to_acknowledge_limitations",
+    "flag_incorrect_answer_reference"
+  ],
+  "required": [
+    "primary_error_category",
+    "flag_task_misinterpretation",
+    "flag_constraint_violation",
+    "flag_insufficient_specificity",
+    "flag_irrelevant_information",
+    "flag_information_omission",
+    "flag_factual_contradiction",
+    "flag_information_fabrication",
+    "flag_detail_omission_in_reasoning",
+    "flag_tautological_reasoning",
+    "flag_unsupported_assumption",
+    "flag_disconnected_reasoning",
+    "flag_oversimplified_causality",
+    "flag_false_certainty",
+    "flag_violation_of_foundational_principles",
+    "flag_failure_to_acknowledge_limitations",
+    "flag_incorrect_answer_reference"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "bkg_to_qa": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "original_hash": {
+            "type": "string"
+          },
+          "question": {
+            "type": "string"
+          }
+        },
+        "propertyOrdering": [
+          "original_hash",
+          "question"
+        ],
+        "required": [
+          "original_hash",
+          "question"
+        ]
+      }
+    }
+  },
+  "propertyOrdering": [
+    "bkg_to_qa"
+  ],
+  "required": [
+    "bkg_to_qa"
+  ]
+}

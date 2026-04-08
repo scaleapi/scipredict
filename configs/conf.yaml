@@ -1,0 +1,29 @@
+sub_confs:
+    convert_mcq_to_ff: {'run': 'configs/run/mcq_to_ff_convert.yaml'}
+    main_qa: {'run': 'configs/run/main_qa.yaml'}
+    main_qa_judge: {'run': 'configs/run/main_qa.yaml'}
+    generate_bkg: {'run': 'configs/run/generate_bkg.yaml'}
+    analyze_errors: {'run': 'configs/run/analyze_errors.yaml'}
+
+logs_dir: "logs"
+output_dir: "output"
+
+model:
+    model_provider: "openai"
+    model_name: "meta-llama-3.1-8b-instruct@q4_k_m"
+    api_base: 'http://localhost:11110/v1'
+    use_cache: false
+    temperature: 1.0
+
+#model:
+#    model_provider: "gemini"
+#    model_name: "gemini-2.0-flash"
+#    api_base: null
+#    use_cache: false
+#    temperature: 1.0
+
+data:
+    base_dir: "data"
+    main: "${data.base_dir}/main_ds.csv"
+    human: "${data.base_dir}/human_baseline.csv"
+    rubrics: "${data.base_dir}/rubric.csv"

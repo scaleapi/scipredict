@@ -1,0 +1,11 @@
+# Supported: mcq_to_ff_convert
+key: null
+
+prompts:
+  mcq_to_ff_convert: "res/prompts/pipelines/mcq_to_ff_convert.ini"
+
+schemas:
+  mcq_to_ff_convert: "res/schemas/pipelines/mcq_to_ff_convert.json"
+
+
+limit: null # For testing, set to null to run all

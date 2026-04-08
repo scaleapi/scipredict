@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "properties": {
+    "free_form_question": {
+      "type": "string",
+      "description": "The newly generated free-form question without ANY multiple-choice options."
+    },
+    "reasoning_for_question": {
+      "type": "string",
+      "description": "An explanation of how the free-form question was constructed and why it is a good, neutral conversion of the original MCQ."
+    },
+    "judge_verification_procedure": {
+      "type": "string",
+      "description": "An explanation of how a judge could verify the correctness and completeness of an answer to the free-form question using only the original MCQ question, correct answer(s), experimental setup, and measurements taken."
+    }
+  },
+  "required": [
+    "free_form_question",
+    "reasoning_for_question",
+    "judge_verification_procedure"
+  ],
+  "propertyOrdering": [
+    "free_form_question",
+    "reasoning_for_question",
+    "judge_verification_procedure"
+  ]
+}

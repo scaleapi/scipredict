@@ -1,0 +1,60 @@
+{
+  "type": "object",
+  "properties": {
+    "answer": {
+      "type": "string"
+    },
+    "reasoning_for_answer": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "very confident in the answer",
+        "somewhat confident in the answer",
+        "neither unsure of, nor confident in the answer",
+        "somewhat unsure of the answer",
+        "very unsure of the answer"
+      ]
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "very easy to answer",
+        "easy to answer",
+        "neither easy nor difficult to answer",
+        "difficult to answer",
+        "very difficult to answer"
+      ]
+    },
+    "feasibility": {
+      "type": "string",
+      "enum": [
+        "very feasible to answer without running the experiment",
+        "somewhat feasible to answer without running the experiment",
+        "neither infeasible nor feasible to answer without running the experiment",
+        "somewhat infeasible to answer without running the experiment",
+        "completely infeasible to answer without running the experiment"
+      ]
+    },
+    "reasoning_for_feasibility": {
+      "type": "string"
+    }
+  },
+  "propertyOrdering": [
+    "answer",
+    "reasoning_for_answer",
+    "confidence",
+    "difficulty",
+    "feasibility",
+    "reasoning_for_feasibility"
+  ],
+  "required": [
+    "answer",
+    "reasoning_for_answer",
+    "confidence",
+    "difficulty",
+    "feasibility",
+    "reasoning_for_feasibility"
+  ]
+}

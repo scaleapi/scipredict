@@ -1,0 +1,9 @@
+aiofiles==25.1.0
+hydra-core==1.3.2
+litellm==1.80.9
+omegaconf==2.3.0
+pandas==2.3.3
+psutil==7.0.0
+pydantic==2.12.5
+python-dotenv==1.2.1
+tqdm==4.66.5

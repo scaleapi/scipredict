@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "properties": {
+    "judge_bkg_qa": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "original_hash": {
+            "type": "string"
+          },
+          "is_correct": {
+            "type": "boolean"
+          },
+          "completeness_coverage": {
+            "type": "number"
+          },
+          "judgment_reasoning": {
+            "type": "string"
+          }
+        },
+        "propertyOrdering": [
+          "original_hash",
+          "is_correct",
+          "completeness_coverage",
+          "judgment_reasoning"
+        ],
+        "required": [
+          "original_hash",
+          "is_correct",
+          "completeness_coverage",
+          "judgment_reasoning"
+        ]
+      },
+      "description": "A list of judgments, one for each answer."
+    }
+  },
+  "propertyOrdering": [
+    "judge_bkg_qa"
+  ],
+  "required": [
+    "judge_bkg_qa"
+  ]
+}

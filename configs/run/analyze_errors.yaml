@@ -1,0 +1,13 @@
+# Valid keys: judge
+key: null
+
+seed: 42
+limit: 5  # limit the number of samples for debugging, set to null to use all samples
+
+prompts:
+    base_dir: "res/prompts/eval"
+    judge: "${run.prompts.base_dir}/errors_analysis_judge.ini"
+
+schemas:
+    base_dir: "res/schemas/eval"
+    judge: "${run.schemas.base_dir}/errors_analysis_judge.json"

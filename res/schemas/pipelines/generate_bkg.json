@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "properties": {
+    "generate_bkg": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "A single piece of relevant background knowledge."
+      }
+    }
+  },
+  "required": ["generate_bkg"]
+}
